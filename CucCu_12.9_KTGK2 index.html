@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hành trình Đà Lạt 12.9</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#f3f0ff;
+       --card1:#e0c3fc;
+       --card2:#c2e9fb;
+       --text:#3d3d5c;}
+html{scroll-behavior:smooth;}
+*{ margin:0;
+   padding:0;
+   box-sizing:border-box;}
+body{ font-family:'Quicksand',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.8;}
+/* HEADER */
+header{ background:linear-gradient(135deg,#e0c3fc,#8ec5fc);
+        color:white;
+        text-align:center;
+        padding:100px 20px;}
+header h1{font-size:34px;
+          font-weight:700;
+          margin-bottom:15px;}
+header p{font-size:17px; 
+         margin:5px 0;}
+.slogan{margin-top:20px;
+        font-size:20px;
+        font-style:italic;}
+/* MENU */
+nav{position:sticky;
+    top:0;
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    z-index:1000;}
+nav a{text-decoration:none;
+      margin:0 15px;
+      font-weight:600;
+      color:#6a5acd;
+      transition:0.3s;}
+nav a:hover{color:#ff69b4;}
+/* SECTION - KHUNG BỰ HƠN */
+section{padding:70px 6%;}
+.section-title{text-align:center;
+               font-size:26px;
+               margin-bottom:40px;
+               font-weight:700;}
+/*CARD*/
+.card{background:white;
+      padding:0;
+      border-radius:18px;
+      margin-bottom:30px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.07);
+      transition:0.3s;
+      overflow:hidden;}
+.card:hover{transform:translateY(-6px);}
+.card-content{ padding:30px;}
+.gradient1{background:linear-gradient(135deg,var(--card1),#fbc2eb);}
+.gradient2{background:linear-gradient(135deg,var(--card2),#a6c1ee);}
+/* IMAGE - BỰ HƠN */
+.trip-img{width:100%;
+          height:500px;
+          object-fit:cover;
+          display:block;}
+/* FOOTER */
+footer{text-align:center;
+       padding:40px;
+       background:linear-gradient(135deg,#e0c3fc,#8ec5fc);
+       color:white;}
+/* RESPONSIVE */
+@media(max-width:768px){
+  section{padding:50px 5%;}
+  header h1{font-size:24px;}
+  nav a{display:block;
+    margin:10px 0;}
+.trip-img{height:320px;}
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>🌸 THAM QUAN – DÃ NGOẠI – GIÁO DỤC KỸ NĂNG SỐNG 🌸</h1>
+    <p>HÀNH TRÌNH TRẢI NGHIỆM TẠI ĐÀ LẠT NGÀN HOA CỦA LỚP 12.9</p>
+    <p>📍 Đà Lạt – Lâm Đồng</p>
+    <p>📅 23-25/1/2026</p>
+    <p>🏫 Trường THPT Huỳnh Văn Nghệ</p>
+    <p>🎗  Lớp 12.9 – Nhóm Cúc Cu</p>
+<div class="slogan">✨ Thanh xuân có hẹn – Đà Lạt có chúng ta! ✨</div>
+</header>
+<nav>
+    <a href="#caonguyen">Những ngày ở cao nguyên</a>
+    <a href="#hoatdong">Hoạt động & Gắn kết</a>
+    <a href="#gocnhin">Góc nhìn về Đà Lạt</a>
+    <a href="#honcachuyendi">Hơn cả một chuyến đi</a>
+</nav>
+<section>
+    <div class="card gradient1">
+        <div class="card-content">
+            <p><strong>Có những hành trình không chỉ để đi, mà để nhớ.</strong></p>
+            <p>Lớp 12.9 chúng em đã cùng nhau đến Đà Lạt trong chuyến dã ngoại ba ngày hai đêm. Không phải để check-in thật nhiều, mà để lưu lại một kỉ niệm thanh xuân đáng nhớ.</p>
+        </div>
+    </div>
+</section>
+<section id="caonguyen">
+    <h2 class="section-title">🏔️ NHỮNG NGÀY Ở CAO NGUYÊN</h2>
+    <!-- Trên những cung đường -->
+    <div class="card gradient2">
+        <img src="trennhungcungduong.jpg" alt="Cung đường Đà Lạt" class="trip-img">
+        <div class="card-content">
+            <h3>Trên những cung đường</h3>
+            <p>Chuyến xe rời trường trong không khí rộn ràng. Những bài hát vang lên, những cuộc trò chuyện nối dài không dứt. Đường xa dường như ngắn lại vì chúng em đi cùng nhau.</p>
+        </div>
+    </div>
+     <!-- Khi Đà Lạt mở ra -->
+      <div class="card">
+        <div class="card-content">
+            <h3>Khi Đà Lạt mở ra trước mắt</h3>
+            <img src="Toidalat.jpg" alt="Khi Đà Lạt mở ra trước mắt" class="trip-img">
+            <p>Không khí mát lạnh, rừng thông và những con dốc đặc trưng khiến ai cũng thích thú. Mỗi địa điểm dừng chân không chỉ để tham quan, mà còn để cả lớp cùng lưu giữ những tấm hình tập thể.</p>
+        </div>
+     </div>
+     <!-- Buổi tối sẻ chia -->
+     <div class="card gradient1">
+        <div class="card-content">
+            <h3>Buổi tối của sự sẻ chia</h3>
+            <img src="buoitoi.jpg" alt="Buổi tối của sự sẻ chia" class="trip-img">
+            <p>Khi thành phố lên đèn, chúng em có nhiều thời gian hơn để ngồi lại bên nhau. Không cần điều gì quá đặc biệt, chỉ cần được cùng cười, cùng nói, cùng lắng nghe cũng đủ làm chuyến đi trở nên đáng giá.</p>
+        </div>
+    </div>
+</section>
+</section>
+<section id="hoatdong">
+ <h2 class="section-title">🎭 HOẠT ĐỘNG & GẮN KẾT</h2>
+ <div class="card gradient2">
+    <div class="card-content">
+        <h3>Hòa nhịp cùng văn hóa Tây Nguyên</h3>
+        <img src="vanhoataynguyen.jpg" alt="Hòa nhịp cùng văn hóa Tây " class="trip-img">
+        <p>Âm thanh cồng chiêng vang lên giữa không gian núi rừng tạo nên một bầu không khí khác lạ và đầy ấn tượng.</p>
+    </div>
+</div>
+<div class="card">
+ <div class="card-content">
+    <h3>Ngắm nhìn đồng quê Garden</h3>
+    <img src="dongquegarden.jpg" alt=" Ngắm nhìn đồng quê Garden " class="trip-img">
+    <p>Khung cảnh thiên nhiên làng quê êm ả .</p>
+  </div>
+</div>
+ <div class="card gradient1">
+  <div class="card-content">
+   <h3> Mongo Land Đà Lạt </h3>
+   <img src= "mongoland.jpg" alt=" Mongo Land Đà Lạt " class="trip-img">
+   <p>Chúng em được vui chơi thỏa thích và cùng nhau trượt thác ngắm nhìn những khung cảnh thiên.</p>
+  </div>
+</div>
+</section>
+<section id="gocnhin">
+    <h2 class="section-title">🌸 GÓC NHÌN VỀ ĐÀ LẠT</h2>
+    <div class="card gradient1">
+        <div class="card-content">
+            <h3>Không gian thanh tịnh</h3>
+            <img src="thienvientruclam.jpg" alt="Không gian thanh tịnh " class="trip-img">
+            <p>Giữa rừng thông và mặt hồ yên ả, Thiền viện Trúc Lâm mang lại cảm giác nhẹ nhàng và thanh tịnh .</p>
+        </div>
+    </div>
+    <div class="card gradient2">
+        <div class="card-content">
+            <h3>Ghi lại những khung cảnh tuyệt đẹp</h3>
+            <img src="khungcanhtuyetdep.jpg" alt="Ghi lại những khung cảnh tuyệt đẹp" class="trip-img">
+            <p>Khung cảnh Đà Lạt đa dạng màu sắc để lại những dấu ấn đặc biệt của mỗi đời học sinh </p>
+        </div>
+    </div>
+</section>
+<section id="honcachuyendi">
+    <h2 class="section-title">🌟 HƠN CẢ MỘT CHUYẾN ĐI 🌟</h2>
+    <div class="card">
+        <div class="card-content">
+            <img src="chuyendidep.jpg"class="trip-img">
+            <p>Chúng em đã cùng nhau thưởng thức ẩm thực địa phương, khám phá những con dốc quanh co và lưu lại từng khoảnh khắc bằng những bức ảnh tập thể.</p>
+            <p>Có thể sau này mỗi người sẽ đi một hướng khác nhau, nhưng ký ức về Đà Lạt 2026 sẽ luôn là một phần trong hành trình trưởng thành của lớp 12.9.</p>
+        </div>
+    </div>
+</section>
+<section> 
+    <h2 class="section-title">📞 THÔNG TIN LIÊN HỆ</h2> 
+    <div class="card gradient1" style="text-align:center;">
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:thpthvn@gmail.com">thpthvn@gmail.com</a></p>
+        </div>
+        <p><strong>🏫 Trường:</strong> THPT Huỳnh Văn Nghệ</p> 
+        <p><strong>🎗️ Lớp:</strong> 12.9</p> 
+         <p><strong>🕊️ Nhóm:</strong> Cúc Cu</p> 
+         <p><strong>📅 Thời gian:</strong> 23-25/1/2026</p> </div>
+         <div class="card gradient2" style="text-align:center;"> 
+            <p><strong>Danh sách thành viên:</strong></p> 
+            <p>Lê Thị Thúy Hằng – 14</p>
+            <p>Liu Giai Nghiên – 23</p> 
+            <p>Huỳnh Thị Thu Hà – 9</p> 
+            <p>Nguyễn Thành Tài – 35</p> 
+        </div>
+    </section> 
+    <footer> © 2026 Lớp 12.9 – Thanh xuân đáng nhớ 💜 </footer> 
+</body> 
+</html>
